@@ -1,0 +1,47 @@
+																																									<html>
+   <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+      <title>Thực thi script online!!</title>      
+   </head>
+   
+   <body>
+      
+      <?php
+         function them()
+					{
+								$ii = array();
+						for($i = 0;$i <10 ;$i++)
+						{	
+							array_push($ii,"pp");
+							}
+							echo count($ii);
+					echo '<pre>';
+				print_r($ii);
+				echo '</pre>';
+						for($iq = 0;$iq < count($ii);$iq+=1)
+						{
+								echo $ii[$iq];
+echo '<br/>';
+						}
+						}
+				
+				
+			
+      ?>
+     <form method="POST" action="">
+       <input type="text" name="hihi">
+       <?php 
+		if(isset($_POST["hu"])){
+		?>
+     <p>
+       <?php them(); ?>
+     </p>
+     <?php
+			}
+		?>
+       <input type="submit" name="hu">
+     </form>
+   
+   </body>
+</html>
